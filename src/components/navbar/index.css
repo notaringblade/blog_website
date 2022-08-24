@@ -1,0 +1,12 @@
+.select-header{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    color: wheat;
+    text-align: center;
+    margin-top: 0;
+    align-items: center;
+    row-gap: 10px;
+    column-gap: 2em;
+    font-size: 20px;
+  }
