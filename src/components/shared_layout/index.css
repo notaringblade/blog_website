@@ -1,0 +1,8 @@
+.layout{
+    background-color: #282c34;
+    width: 90%;
+    color: wheat;
+    padding-top: 2.5em;
+    margin: auto;
+    display: flex;
+}

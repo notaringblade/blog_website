@@ -1,0 +1,33 @@
+.blog-view{
+    display: flex;
+    
+}
+.blog{
+    height: fit-content;
+    width: 550px;
+    border: 2px solid wheat;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    color: wheat;
+    text-align: center;
+    font-size: 18px;
+    overflow: hidden;
+}
+.image{
+    width: 550px;
+
+}
+
+.text-div{
+    background-color: wheat;
+    color: #282c34;
+    border: 0px solid wheat;
+    border-radius: 10px;
+}
+
+.summary-text{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}

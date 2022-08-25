@@ -1,12 +1,33 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
 .select-header{
+    top: 0;
+    position: fixed;
+    display: flex;
+    width: 95%;
+    margin: auto;
+    color: black;
+    background-color: wheat;
+    height: 3%;
+    border-radius: 20px;
+    margin-left: 40px;
+  }
+
+.links{
+  color: inherit;
+  text-decoration: none;
+}
+.items{
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
-    color: wheat;
     text-align: center;
-    margin-top: 0;
     align-items: center;
-    row-gap: 10px;
-    column-gap: 2em;
-    font-size: 20px;
-  }
+    row-gap: 50px;
+    column-gap: 3em;
+    font-size: 18px;
+}
