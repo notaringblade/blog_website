@@ -4,6 +4,9 @@
 body{
   margin: 0;
 }
+.nav-bar{
+  width: 90%;
+}
 .select-header{
     top: 0;
     position: fixed;
@@ -14,6 +17,7 @@ body{
     background-color: wheat;
     border-radius: 20px;
     margin-left: 40px;
+    font-family: monospace;
   }
 
 .links{

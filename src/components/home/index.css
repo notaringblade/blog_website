@@ -5,29 +5,31 @@
 .blog{
     height: fit-content;
     width: 550px;
-    border: 2px solid wheat;
+    border: 3px solid wheat;
     border-radius: 20px;
     margin-bottom: 10px;
     color: wheat;
     text-align: center;
     font-size: 18px;
-    overflow: hidden;
 }
 .image{
     width: 550px;
-
 }
-
+.title{
+    margin-top: 100px;
+}
 .text-div{
     background-color: wheat;
     color: #282c34;
     border: 0px solid wheat;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .summary-text{
-    width: 100%;
+    width: 90%;
     overflow: hidden;
     text-overflow: ellipsis;
-    
+    display: flex;
+    margin: auto;
 }

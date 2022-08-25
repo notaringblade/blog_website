@@ -27,7 +27,7 @@ export default function Home() {
                         alt = 'demo'
                         src="https://picsum.photos/300/200"
                       />
-                      <div>
+                      <div className='title'>
                         <p>
                           {blogs.title}
                         </p>

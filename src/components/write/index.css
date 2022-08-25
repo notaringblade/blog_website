@@ -1,0 +1,46 @@
+.writing-area{
+    width: 100%;
+    min-height: 90vh;
+    margin: auto;
+    padding: 10px;
+    /* text-align: center; */
+    color: wheat;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    
+}
+.title-input{
+    display: block;
+    margin: auto;
+  border: 0px solid wheat;
+  border-radius: 20px;
+  /* margin-bottom: 20px; */
+  background-color: wheat;
+  width: 85%;
+  height: calc(20vh - 130px);
+  padding: 10px;
+  resize: none;
+  font-size: inherit;
+  font-family: monospace;
+  color: #282c34;
+  margin-bottom: 20px;
+}
+.body-input{
+    display: block;
+    margin: auto;
+    border: 4px solid wheat;
+    border-radius: 20px;
+    background-color: #282c34;
+    width: 95%;
+    min-height: 80vh;
+    max-height: fit-content;
+    color: wheat;
+
+}
+.title-area{
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
