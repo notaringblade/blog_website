@@ -11,17 +11,16 @@
     
 }
 .title-input{
-    display: block;
-    margin: auto;
+  margin: auto;
   border: 0px solid wheat;
-  border-radius: 20px;
+  border-radius: 30px;
   /* margin-bottom: 20px; */
   background-color: wheat;
   width: 85%;
-  height: calc(20vh - 130px);
+  height: 60px;
   padding: 10px;
   resize: none;
-  font-size: inherit;
+  font-size: 20px;
   font-family: monospace;
   color: #282c34;
   margin-bottom: 20px;
@@ -29,18 +28,21 @@
 .body-input{
     display: block;
     margin: auto;
-    border: 4px solid wheat;
-    border-radius: 20px;
     background-color: #282c34;
-    width: 95%;
-    min-height: 80vh;
+    width: 100%;
+    min-height: 5vh;
     max-height: fit-content;
     color: wheat;
-
+    border: 3px solid wheat;
+    border-radius: 20px;
+    
 }
 .title-area{
     flex-wrap: nowrap;
     display: flex;
     flex-direction: row;
     width: 100%;
+}
+input{
+    border-color: wheat;
 }

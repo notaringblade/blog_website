@@ -6,13 +6,25 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "@tiptap/extension-code-block": "^2.0.0-beta.42",
+    "@tiptap/extension-code-block-lowlight": "^2.0.0-beta.73",
+    "@tiptap/extension-focus": "^2.0.0-beta.45",
+    "@tiptap/extension-image": "^2.0.0-beta.30",
+    "@tiptap/extension-placeholder": "^2.0.0-beta.53",
+    "@tiptap/extension-youtube": "^2.0.0-beta.6",
+    "@tiptap/react": "^2.0.0-beta.114",
+    "@tiptap/starter-kit": "^2.0.0-beta.191",
     "bootstrap": "^5.2.0",
+    "dante3": "^1.0.6-alpha.2",
+    "lowlight": "^2.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0",
     "react-pro-sidebar": "^0.7.1",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "react-strap": "^0.0.1",
+    "react-tiny-fab": "^4.0.4",
     "reactstrap": "^9.1.3",
     "web-vitals": "^2.1.4"
   },
@@ -39,5 +51,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "sass": "^1.54.5"
   }
 }
