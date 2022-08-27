@@ -6,25 +6,24 @@ body{
 }
 
 .select-header{
-    top: 2em;
+    top: 4em;
     position: fixed;
     display: flex;
-    max-width: min-content;
-    height: 95%;
+    max-width: fit-content;
+    height: 90%;
     color: wheat;
     background-color: #282c34;
     border-radius: 40px;
     font-family: monospace;
     border-radius: 20px;
     border: 3px solid wheat;
+
   }
 
 .links{
   color: inherit;
   text-decoration: none;
-  writing-mode: vertical-lr;
-  text-orientation: upright;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: bold;
 }
 .links:hover{
@@ -36,7 +35,7 @@ body{
     flex-wrap: wrap;
     text-align: center;
     flex-direction: column;
-    row-gap: 200px;
+    row-gap: 320px;
     column-gap: 5em;
     font-size: 17px;
 }
