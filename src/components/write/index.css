@@ -1,5 +1,5 @@
 .writing-area{
-    width: 100%;
+    min-width: 100%;
     min-height: 90vh;
     margin: auto;
     padding: 10px;

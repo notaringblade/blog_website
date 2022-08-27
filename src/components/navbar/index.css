@@ -1,23 +1,15 @@
-*{
-  box-sizing: border-box;
-}
-body{
-  margin: 0;
-}
+
 
 .select-header{
-    top: 4em;
-    position: fixed;
-    display: flex;
-    max-width: fit-content;
-    height: 90%;
-    color: wheat;
-    background-color: #282c34;
-    border-radius: 40px;
-    font-family: monospace;
-    border-radius: 20px;
-    border: 3px solid wheat;
-
+  top: 0;
+  width: 100%;
+  color: wheat;
+  background-color: #282c34;
+  border-radius: 40px;
+  font-family: monospace;
+  border-radius: 20px;
+  border: 3px solid wheat;
+  min-height: 5%;
   }
 
 .links{
@@ -30,12 +22,12 @@ body{
   color: white;
 }
 .items{
-    margin: auto;
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
-    flex-direction: column;
-    row-gap: 320px;
-    column-gap: 5em;
+    flex-direction: row;
     font-size: 17px;
+    row-gap: 100px;
+    column-gap: 100px;
+    align-items: center;
+    margin-left: 70px;
 }

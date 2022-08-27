@@ -17,6 +17,7 @@
     "bootstrap": "^5.2.0",
     "dante3": "^1.0.6-alpha.2",
     "lowlight": "^2.7.0",
+    "mongoose": "^6.5.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",

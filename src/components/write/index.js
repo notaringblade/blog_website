@@ -1,6 +1,7 @@
-import React, {useCallback} from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React, {useCallback, useState} from 'react'
 import './index.css'
-import { Container } from 'reactstrap'
+import { Button, Container } from 'reactstrap'
 import { useEditor, EditorContent } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
 import Image from '@tiptap/extension-image'
@@ -15,6 +16,9 @@ import { BsCodeSlash } from "react-icons/bs";
 import './styles.scss'
 
 export default function Write() {
+
+  //states
+  const [blog, setBlog] = useState([])
 
   const editor = useEditor({
 
@@ -67,9 +71,6 @@ export default function Write() {
   }
 
   //YT Videos
-
- 
-
   const addYoutubeVideo = () => {
     const url = prompt('Enter YouTube URL')
 
@@ -80,30 +81,39 @@ export default function Write() {
     })
   }
 
+  //save blog post
+  const saveBlogPost = () =>{
+    // console.log(editor.getJSON())
+    
+    console.log(JSON.stringify(editor.getJSON()))
+  }
+  const changeValue = (event) =>{
+    console.log(event)
+  }
+
   return (
     <>
       <div className='writing-area'>
         <Container fluid className='title-area'>
-          <input type= "text" placeholder= "Blog Title" className='title-input' autoFocus/>
+          <input 
+          type= "text"
+          placeholder= "Blog Title"
+          className='title-input'
+          autoFocus
+          onChange={changeValue}
+          />
         </Container>
 
         <Container fluid >
           
           <div className='body-input'>
 
-            <EditorContent editor={editor} 
-              
-            />
+            <EditorContent editor={editor}  />
           </div>
 
           <Fab
-              // mainButtonStyles={mainButtonStyles}
-              // actionButtonStyles={actionButtonStyles}
-              // style={style}
               icon={<AiOutlinePlus />}
-              // event={event}
               alwaysShowTitle={true}
-              // onClick={someFunctionForTheMainButton}
             >
              <Action text='add image' onClick={addImage} >
              {<AiOutlineFileImage />}
@@ -117,8 +127,9 @@ export default function Write() {
              <Action text='add codeblock' onClick={() => editor.chain().focus().setCodeBlock().run()}>
               {< BsCodeSlash/>}
              </Action>
-             
-            </Fab>
+          </Fab>
+          <Button onClick={saveBlogPost}>Save</Button>
+
         </Container >
       </div>
     </>
