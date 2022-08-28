@@ -1,10 +1,7 @@
 .blog-view{
     display: flex;
-
 }
 .blog{
-    height: fit-content;
-    min-height: fit-content;
     border: 3px solid wheat;
     border-radius: 20px;
     color: wheat;
@@ -12,6 +9,7 @@
     font-size: 18px;
     margin-bottom: 20px;
 }
+
 .image{
     border-radius: 15px;
 }
