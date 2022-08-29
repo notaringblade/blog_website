@@ -9,7 +9,7 @@ import uuid from 'react-uuid';
 
 function App() {
 
-
+  const [listOfBlogs, setListOfBlogs] = useState([{}])
   
 
   return (
@@ -18,8 +18,8 @@ function App() {
       <BrowserRouter>
           <Routes>
             <Route path='/' element={<SharedLayout />}>
-              <Route index element={<Home />} />
-              <Route path='write' element={<Write />} />
+              <Route index element={<Home listOfBlogs = {listOfBlogs}  />} />
+              <Route path='write' element={<Write listOfBlogs = {listOfBlogs} setListOfBlogs = {setListOfBlogs} />} />
               <Route path='drafts' element={<Drafts />} />
             </Route>
           </Routes>

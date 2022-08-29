@@ -23,7 +23,7 @@ export default function Write() {
   const [blog, setBlog] = useState({
     title: '',
     content: '',
-    blogId: uuid()
+    // blogId: uuid()
   })
 
 
@@ -34,6 +34,12 @@ export default function Write() {
         class: 'prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto focus:outline-none',
       },
     },
+          // triggered on every change
+        // onUpdate: ({ editor }) => {
+        //   const html = editor.getHTML()
+        //   setBlog({...blog, content: (html)})
+        //   console.log(blog)
+        // },
 
           extensions: [
             StarterKit,
@@ -59,11 +65,7 @@ export default function Write() {
             }),
           ],
 
-          onUpdate: ({ editor }) => {
-            const blogContent = editor.getJSON()
-            // send the content to an API here
-            console.log(JSON.stringify(blogContent))
-          },
+          
 
   })
 
@@ -93,30 +95,30 @@ export default function Write() {
         }
 
         //save blog post
-        const saveBlogPost = () =>{
-          // console.log(editor.getJSON())
-          const blogContent = editor.getJSON()
-          setBlog({...blog, "title": "" , "content": {blogContent} })
-          console.log(JSON.stringify(blog))
-        }
-        const changeValue = (event) =>{
-          setBlog({...blog, "title": event.target.value})
-          console.log(JSON.stringify(blog))
+        const fieldInputChange = (event) => {
+          // const title = (event.target.value)
+          // setBlog({...blog, 'title': {title}})
           // console.log(event)
+          setBlog({...blog, 'title': event.target.value})
+        }
+        const saveEditor = () =>{
+          setBlog({...blog, "content": JSON.stringify(editor.getJSON())})
+          console.log(blog)
         }
         
 
         return (
           <>
             <div className='writing-area'>
+              {/* {JSON.stringify(blog)} */}
               <Container fluid className='title-area'>
                 
-                <input 
+                <input  
                 type= "text"
                 placeholder= "Blog Title"
                 className='title-input'
                 autoFocus
-                onChange={changeValue}
+                onChange={fieldInputChange}
                 id = "title"
                 />
               </Container>
@@ -125,7 +127,7 @@ export default function Write() {
                 
                 <div className='body-input'>
 
-                  <EditorContent editor={editor}  onChange = {changeValue}/>
+                  <EditorContent editor={editor}  />
                 </div>
 
                 <Fab
@@ -145,7 +147,7 @@ export default function Write() {
                     {< BsCodeSlash/>}
                   </Action>
                 </Fab>
-                <Button onClick={saveBlogPost}>Save</Button>
+                <Button onClick={saveEditor} >Save</Button>
 
               </Container >
             </div>

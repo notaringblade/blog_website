@@ -3,7 +3,7 @@ import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Card, CardBody, CardTitle, CardText } from "reactstrap";
 
-export default function Home() {
+export default function Home({listOfBlogs}) {
 
   const blogs = [
     {id : 1, title: 'The Sudden Fall of JingOS and their Linux Tablet', body: 'The entire Linux community was hyped about the JingPad. It was the first Linux tablet that had amazing build quality, and its own flagship iPad OS inspired distro helped too. We could have had on our hands one of the best pieces of Linux hardware, complete with features such as Android app support. However, this never came to be, and the company behind it seems to be completely dead.' },
@@ -20,7 +20,7 @@ export default function Home() {
         <div >
           <Row xs='1' sm='2' md='3'  lg = '3'>
           {
-            blogs.map((blogs) =>(
+            blogs.map((item) =>(
                   <Col >
                     <Card className='blog'
 
@@ -33,11 +33,11 @@ export default function Home() {
                               />
                               <CardBody>
                                 <CardTitle tag="h5">
-                                  {blogs.title}
+                                  {item.title}
                                 </CardTitle>
                                 
                                 <CardText className='summary-text'>
-                                {blogs.body}
+                                {item.body}
 
                                 </CardText>
                                 
