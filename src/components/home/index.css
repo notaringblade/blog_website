@@ -25,9 +25,9 @@
 }
 
 .summary-text{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: flex;
-    margin: auto;
-    
+        /* overflow: hidden;
+        text-overflow: ellipsis;
+        display: flex;
+        margin: auto;
+        */
 }
